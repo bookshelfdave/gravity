@@ -32,6 +32,7 @@ class LogFileParser():
           lastlog = lastlog + line
       self.logdata(lastlog)
 
+  # this is not elegant at the moment, but I'm in a hurry
   def parsedata(self, ls):
      chunks = ls.split(" ", 4)
      if len(chunks) > 4:
